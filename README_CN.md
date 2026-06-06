@@ -16,7 +16,10 @@
 
 </div>
 
+> **说明**: 本仓库是我基于 Sub2API 的个人维护分支, 用于合并本人需要的修复与部署调整。下方 Docker 部署方式已更新为使用本分支脚本与 `wsxfs/sub2api:latest` 镜像。
+
 > **Sub2API 官方仅使用  `sub2api.org` 与 `pincc.ai` 两个域名。其他使用 Sub2API 名义的网站可能为第三方部署或服务，与本项目无关，请自行甄别。**
+
 ---
 
 ## 在线体验
@@ -254,7 +257,7 @@ curl -sSL https://raw.githubusercontent.com/Wei-Shaw/sub2api/main/deploy/install
 mkdir -p sub2api-deploy && cd sub2api-deploy
 
 # 下载并运行部署准备脚本
-curl -sSL https://raw.githubusercontent.com/Wei-Shaw/sub2api/main/deploy/docker-deploy.sh | bash
+curl -sSL https://raw.githubusercontent.com/wsxfs/sub2api/main/deploy/docker-deploy.sh | bash
 
 # 启动服务
 docker compose up -d
@@ -276,7 +279,7 @@ docker compose logs -f sub2api
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/Wei-Shaw/sub2api.git
+git clone https://github.com/wsxfs/sub2api.git
 cd sub2api/deploy
 
 # 2. 复制环境配置文件
